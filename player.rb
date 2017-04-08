@@ -28,6 +28,13 @@ class Player
 		@health += 15
 		puts "#{@name} got w00ted. His health is now #{@health}"
 	end	
+	def strong?
+		@health > 100
+	end
+	def skip
+		puts "Player has been skipped."
+	end
+
 
 end
 
@@ -42,5 +49,4 @@ if __FILE__ == $0
 	player.blamm
 	puts player.health
 	puts player.name
-	
 end
