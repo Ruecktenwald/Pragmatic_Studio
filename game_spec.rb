@@ -17,7 +17,7 @@ describe Game do
 		end
 
 		it "w00t player if 5 or 6 is rolled" do 
-			allow_any_instance_of(Die).to receive(:roll).and_return(5)
+			# allow_any_instance_of(Die).to receive(:roll).and_return(5)
 
 			@game.play
 			# @player.w00t
@@ -25,7 +25,7 @@ describe Game do
 		end
 
 		it "skip player if 3 or 4 is rolled" do 
-			allow_any_instance_of(Die).to receive(:roll).and_return(3)
+			# allow_any_instance_of(Die).to receive(:roll).and_return(3)
 
 			@game.play
 			@player.skip
@@ -34,7 +34,7 @@ describe Game do
 		end
 
 		it "Blamm player if 1 or 2 is rolled" do
-			allow_any_instance_of(Die).to receive(:roll).and_return(1)
+			# allow_any_instance_of(Die).to receive(:roll).and_return(1)
 
 			@game.play
 			# @player.blamm
