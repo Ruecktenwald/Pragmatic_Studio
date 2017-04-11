@@ -28,7 +28,7 @@ describe Game do
 			# allow_any_instance_of(Die).to receive(:roll).and_return(3)
 
 			@game.play
-			@player.skip
+			# @player.skip
 			expect(@player.health).to eq(@initial_health)
 
 		end
