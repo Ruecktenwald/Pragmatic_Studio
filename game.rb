@@ -9,7 +9,7 @@ class Game
 
 	  def print_stats
 	  	strong_players, wimpy_players = @players.partition { |p| p.strong?}
-	  
+	    sorted_players = @players.sort { |a,b| b.score <=> a.score }
 	  	puts "\n#{@title} Statistics:"
 
 	  	puts "\n#{strong_players.size} strong players:"
@@ -24,7 +24,11 @@ class Game
 
 	  	end
 
-
+	  	puts "\n#{@title} High Score:"
+	  	sorted_players.each do |p|
+	  		formatted_score = p.name.ljust(20, '.')
+	  		puts "#{formatted_score} #{p.score}"
+	  	end
 	  end
 
 	  def add_player(a_player)
