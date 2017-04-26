@@ -34,7 +34,9 @@ class Player
 	def skip
 		puts "Player has been skipped."
 	end
-
+	def <=>(other)
+		other.score <=> score
+	end
 
 end
 

@@ -67,8 +67,21 @@ context "health less than 100" do
 
 	end
 
+context "in collection of players" do
+	before do
+		@player1 = Player.new("sal", 100)
+		@player2 = Player.new("gro", 200)
+		@player3 = Player.new("moe", 300)
 
+		@players = [@player1, @player2, @player3]
+		end
+
+		it "sort by descending order" do
+			expect(@players.sort).to eq([@player3, @player2, @player1])
+		end
+	end
 end
+
 
 
 
