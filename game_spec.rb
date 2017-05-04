@@ -53,7 +53,13 @@ describe Game do
 
 		  # or use alternate expectation syntax:
 		  # expect(player.points).not_to be_zero
-		  it "computes total points as the sum of all player points" do
+		
+end
+end
+
+context "fixed" do
+
+	it "computes total points as the sum of all player points" do
 		  game = Game.new("Knuckleheads")
 
 		  player1 = Player.new("moe")
@@ -69,12 +75,6 @@ describe Game do
 		  game.total_points.should == 500
 		  end
 end
-end
-
-
-
-
-
 
 
 
