@@ -1,8 +1,9 @@
 require_relative 'game'
-
+require_relative 'playable'
 class Player
+
 	attr_accessor :name
-	attr_reader :health
+	attr_accessor :health
 
 	def initialize(name,health=100)
 		@name = name.capitalize
@@ -14,6 +15,8 @@ class Player
 	# 	player = Player.new(name, Integer(health))
 	  		
 	# end
+	include Playable
+
 	def found_treasure(treasure)
 		@found_treasure[treasure.name] += treasure.points
 		puts "#{@name} found a #{treasure.name} worth #{treasure.points} points."
@@ -36,19 +39,6 @@ class Player
 	end
 	def score
 		@health + points
-	end
-
-	def blamm
-		@health -= 10
-		puts "#{@name} got blammed! His health is now #{@health}"
-	end
-
-	def w00t
-		@health += 15
-		puts "#{@name} got w00ted. His health is now #{@health}"
-	end	
-	def strong?
-		@health > 100
 	end
 	def skip
 		puts "Player has been skipped."
