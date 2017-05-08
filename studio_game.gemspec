@@ -3,12 +3,12 @@ Gem::Specification.new do |s|
   s.version      = "1.0.0"
   s.author       = "Peter_R"
   s.email        = "ruecktenwald@gmail.com"
-  s.homepage     = "na"
+  s.homepage     = "https://www.google.com"
   s.summary      = "game_of_chance"
-  s.description  = File.read(File.join(File.dirname(__FILE__), 'README'))
+  s.description  = File.read(File.join(File.dirname(__FILE__), 'README.md'))
   s.licenses     = ['MIT']
 
-  s.files         = Dir["{bin,lib,spec}/**/*"] + %w(LICENSE README)
+  s.files         = Dir["{bin,lib,spec}/**/*"] + %w(LICENSE.md README.md)
   s.test_files    = Dir["spec/**/*"]
   s.executables   = [ 'studio_game' ]
 
