@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
-  s.name         = "pragmatic_game"
+  s.name         = "studio_game"
   s.version      = "1.0.0"
   s.author       = "Peter_R"
   s.email        = "ruecktenwald@gmail.com"
   s.homepage     = "na"
-  s.summary      = "game of chance"
+  s.summary      = "game_of_chance"
   s.description  = File.read(File.join(File.dirname(__FILE__), 'README'))
   s.licenses     = ['MIT']
 
