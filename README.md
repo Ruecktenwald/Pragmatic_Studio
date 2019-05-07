@@ -1,1 +1,1 @@
-Game built ruby tpo focus on the language itself without distractions.
+Game built ruby to focus on the language itself without distractions.
