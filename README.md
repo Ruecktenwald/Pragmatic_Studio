@@ -1,1 +1,1 @@
-Pragmatic Studios online course. Game.
+Game built ruby tpo focus on the language itself without distractions.
