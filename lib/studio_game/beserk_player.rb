@@ -3,8 +3,8 @@ require_relative 'player'
 module StudioGame
 	class BerserkPlayer < Player
 		def initialize (name, health=100)
-		super(name, health)
-		  @w00t_count = 0
+			super(name, health)
+			@w00t_count = 0
 		end
 
 		def berserk?
@@ -29,8 +29,8 @@ module StudioGame
 
 
 	if __FILE__ == $0
-	  berserker = BerserkPlayer.new("berserker", 50)
-	  6.times { berserker.w00t }
-	  6.times { berserker.blam}
+		berserker = BerserkPlayer.new("berserker", 50)
+		6.times { berserker.w00t }
+		6.times { berserker.blam}
 	end
 end

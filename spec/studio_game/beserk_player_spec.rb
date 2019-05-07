@@ -1,7 +1,7 @@
 require 'studio_game/beserk_player'
 require 'studio_game/spec_helper'
 
-  module StudioGame
+module StudioGame
   describe BerserkPlayer do
     
     before do

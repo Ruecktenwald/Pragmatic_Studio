@@ -1,6 +1,6 @@
 require'studio_game/clumsy_player'
 
-  module StudioGame
+module StudioGame
   describe ClumsyPlayer do
     before do
       @player = ClumsyPlayer.new("klutz")

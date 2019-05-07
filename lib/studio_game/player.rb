@@ -16,7 +16,7 @@ module StudioGame
 		def self.from_csv(string)
 			name, health = string.split(',')
 			player = Player.new(name, Integer(health))
-		  		
+			
 		end
 		include Playable
 
