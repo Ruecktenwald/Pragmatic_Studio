@@ -1,1 +1,1 @@
-Game built ruby to focus on the language itself without distractions.
+Game built in ruby to focus on the language itself without distractions. 
